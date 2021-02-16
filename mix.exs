@@ -1,8 +1,8 @@
 defmodule NervesSystemX8664.MixProject do
   use Mix.Project
 
-  @github_organization "nerves-project"
-  @app :nerves_system_x86_64
+  @github_organization "Herman-verschooten-bvba"
+  @app :nerves_system_apu2
   @source_url "https://github.com/#{@github_organization}/#{@app}"
   @version Path.join(__DIR__, "VERSION")
            |> File.read!()
@@ -73,7 +73,7 @@ defmodule NervesSystemX8664.MixProject do
 
   defp description do
     """
-    Nerves System - x86_64
+    Nerves System - Pc Engines APU2
     """
   end
 
