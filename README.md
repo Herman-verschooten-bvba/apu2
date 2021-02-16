@@ -1,27 +1,23 @@
-# Generic x86_64 System
+# PC Engines APU2 Series
 
-[![CircleCI](https://circleci.com/gh/nerves-project/nerves_system_x86_64/tree/master.svg?style=svg)](https://circleci.com/gh/nerves-project/nerves_system_x86_64/tree/master)
-[![Hex version](https://img.shields.io/hexpm/v/nerves_system_x86_64.svg "Hex version")](https://hex.pm/packages/nerves_system_x86_64)
 
-This is the base Nerves System configuration for a generic x86_64 system.
+This is the base Nerves System configuration for a generic PC Engines APU2+ system.
 
 | Feature              | Description                     |
 | -------------------- | ------------------------------- |
-| CPU                  | Intel                           |
-| Memory               | 512 MB+ DRAM                    |
+| CPU                  | AMD GX-412TC                    |
+| Memory               | 2~4 GB DRAM                     |
 | Storage              | Hard disk/SSD/etc. (/dev/sda)   |
 | Linux kernel         | 5.4                             |
-| IEx terminal         | Display - tty0                  |
-| Hardware I/O         | None                            |
-| Ethernet             | Yes                             |
+| IEx terminal         | Display - ttyS0                 |
+| Hardware I/O         | GPIO                            |
+| Ethernet             | 3~4                             |
 
-Please contact us about this if you're really interested in it. We don't
-exercise it regularly except as a base for other x86_64 projects.
 
 ## Using
 
 The most common way of using this Nerves System is create a project with `mix
-nerves.new` and to export `MIX_TARGET=x86_64`. See the [Getting started
+nerves.new` and to export `MIX_TARGET=apu2`. See the [Getting started
 guide](https://hexdocs.pm/nerves/getting-started.html#creating-a-new-nerves-app)
 for more information.
 
